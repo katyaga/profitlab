@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Raleway-Regular";
+    font-display: swap;
+    src: url("fonts/Raleway-Regular.woff2") format("woff2"), url("fonts/Raleway-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    font-display: swap;
+    src: url("fonts/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-Black";
+  font-display: swap;
+  src: url("fonts/Raleway-Black.woff2") format("woff2"), url("fonts/Raleway-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway-MediumItalic";
+  font-display: swap;
+  src: url("fonts/Raleway-MediumItalic.woff2") format("woff2"), url("fonts/Raleway-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    font-display: swap;
+    src: url("fonts/Lato-Black.woff2") format("woff2"), url("fonts/Lato-Black.woff") format("woff");
+}
