@@ -255,42 +255,59 @@ input[type="radio"].visually-hidden,
 .jobs__item {
   position: relative;
   overflow: hidden;
+}
+
+.jobs__item-link {
+  display: block;
   width: 100%;
   height: 170px;
 }
+
+/*.jobs__item a {*/
+/*  display: block;*/
+/*}*/
 
 .jobs__wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
-  width: 100px;
+  width: 80px;
+  height: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .jobs__buttons button {
-
   width: 30px;
   height: 30px;
   background-image: url("img/noname.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center;
 }
 
 .jobs__enlarge {
-
-  display: block;
   width: 30px;
   height: 30px;
   background-image: url("img/search-button.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
 }
 
-.jobs__item a:hover .jobs__buttons {
-  display: block;
+.jobs__buttons {
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(35, 31, 32, 0.3);
 }
 
-.jobs__item a:hover .jobs__buttons,
-.jobs__item:focus-within .jobs__buttons {
+.jobs__item:hover .jobs__buttons {
   display: block;
 }
 
@@ -298,17 +315,6 @@ input[type="radio"].visually-hidden,
   margin: 0 auto;
   width: auto;
   height: 100%;
-}
-
-.jobs__buttons {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(35, 31, 32, 0.3);
-  top: 0;
-  left: 0;
-  z-index: 10;
 }
 
 .command {
@@ -353,6 +359,10 @@ input[type="radio"].visually-hidden,
   border-radius: 50%;
   background-color: rgba(49, 51, 50, 0.5);
   color: #ffffff;
+}
+
+.command__photo:hover .command__position {
+  display: block;
 }
 
 .command__name {
@@ -652,7 +662,7 @@ input[type="radio"].visually-hidden,
 
   }
 
-  .jobs__item {
+  .jobs__item-link {
     width: 177px;
     height: 177px;
   }
@@ -812,6 +822,11 @@ input[type="radio"].visually-hidden,
     height: auto;
   }
 
+  .jobs__item-link {
+    width: 100%;
+    height: 100%;
+  }
+
   .command {
     padding: 40px;
   }
@@ -837,20 +852,11 @@ input[type="radio"].visually-hidden,
     top: 60px;
     width: 300px;
     height: 266px;
-    border-radius: 24px 24px 0 0;
-    background-image:
-        /*url("img/city.png"),*/
-        /*url("img/nature.png"),*/
-        /*url("img/bus.png"),*/
-        /*url("img/desktop.png"),*/
-        /*url("img/bus.png"),*/
-        /*url("img/desktop.png"),*/
-        /*url("img/city.png"),*/
-        /*url("img/bus.png"),*/
-        url("img/phone.png");
+    /*border-radius: 24px 24px 0 0;*/
+    background-image: url("img/phone-images-1.png");
     background-repeat: no-repeat;
-    background-size: 300px 350px;
-    background-position: 0 0;
+    background-position: center;
+    background-size: 340px 336px;
   }
 
   .achievements__title {
